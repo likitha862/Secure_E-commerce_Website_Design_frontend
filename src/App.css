@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* // Beautiful Primary Button */
+.common-btn {
+  background: linear-gradient(135deg, #8a4baf, #6a3796);
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(138, 75, 175, 0.2);
+  margin-top: 10px;
+
+  &:hover {
+    background: #6a3796;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(138, 75, 175, 0.3);
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+}

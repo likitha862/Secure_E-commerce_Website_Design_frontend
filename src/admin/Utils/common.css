@@ -1,0 +1,84 @@
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background-color: #2f2f2f;
+  color: white;
+  border-right: 1px solid #ccc;
+  padding-top: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  z-index: 1000; /* ✅ ensure sidebar stays above header */
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+  }
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+  padding: 12px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li:hover {
+  background-color: #444;
+}
+
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar ul li a .icon {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar ul li a span {
+  margin-left: 12px;
+  font-size: 15px;
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .sidebar ul li a span {
+    display: none;
+  }
+}
+
+.dashboard-admin {
+  display: flex;
+  margin-left: 220px;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  transition: margin-left 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .dashboard-admin {
+    margin-left: 60px;
+  }
+}
+
+.content {
+  flex: 1;
+}

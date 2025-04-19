@@ -1,0 +1,114 @@
+.course-description {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #f5f7fa, #e3e8ec);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  min-height: 100vh;
+
+  .course-header {
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+
+    .course-image {
+      width: 260px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .course-info {
+      flex: 1;
+      min-width: 260px;
+      text-align: left;
+
+      h2 {
+        font-size: 30px;
+        color: #4b2e83;
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 15px;
+        color: #666;
+        margin: 6px 0;
+      }
+    }
+  }
+
+  .course-summary {
+    max-width: 850px;
+    margin: 0 auto 30px;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.8;
+    padding: 0 10px;
+  }
+
+  .course-price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #6a3796;
+    margin-bottom: 35px;
+  }
+
+  .common-btn {
+    padding: 14px 36px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #8a4baf, #6a3796);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(138, 75, 175, 0.3);
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(138, 75, 175, 0.4);
+    }
+
+    &:disabled {
+      background: #c9b2dc;
+      cursor: not-allowed;
+    }
+  }
+
+  /* // Responsive design */
+  @media (max-width: 768px) {
+    .course-header {
+      flex-direction: column;
+      text-align: center;
+
+      .course-info {
+        text-align: center;
+      }
+    }
+
+    .course-summary {
+      font-size: 15px;
+    }
+
+    .course-price {
+      font-size: 18px;
+    }
+
+    .common-btn {
+      padding: 12px 28px;
+    }
+  }
+}

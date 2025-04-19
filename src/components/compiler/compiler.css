@@ -1,0 +1,16 @@
+.compiler-controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .compiler-controls select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+  
+  .compiler-controls button {
+    padding: 0.5rem 1rem;
+  }
+  

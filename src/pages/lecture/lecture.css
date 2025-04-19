@@ -1,0 +1,153 @@
+.lecture-page {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background: #f8f9fc;
+  font-family: 'Poppins', sans-serif;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .left {
+    width: 70%;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 20px 0 10px;
+      color: #4b2e83;
+    }
+
+    h3 {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    video {
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .right {
+    width: 30%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    .lecture-form {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      margin-bottom: 20px;
+
+      h2 {
+        font-size: 22px;
+        font-weight: 600;
+        color: #6a3796;
+        margin-bottom: 15px;
+      }
+
+      form {
+        label {
+          display: block;
+          font-size: 14px;
+          margin-bottom: 6px;
+          color: #333;
+          font-weight: 500;
+        }
+
+        input {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          font-size: 14px;
+          outline: none;
+          transition: border 0.2s;
+
+          &:focus {
+            border-color: #8a4baf;
+          }
+        }
+
+        video {
+          display: block;
+          margin: 10px 0;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .lecture-number {
+      background: #fff;
+      padding: 12px 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-top: 12px;
+      font-size: 15px;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      &:hover {
+        background-color: #8a4baf;
+        color: white;
+        transform: scale(1.02);
+      }
+    }
+
+    .active {
+      background-color: #8a4baf;
+      color: white;
+      font-weight: 600;
+      transform: scale(1.03);
+    }
+  }
+}
+
+.progress {
+  width: fit-content;
+  background: #4b2e83;
+  color: white;
+  font-size: 14px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  progress {
+    width: 100%;
+    margin-top: 5px;
+    height: 8px;
+    border-radius: 10px;
+    appearance: none;
+
+    &::-webkit-progress-bar {
+      background-color: #eee;
+      border-radius: 10px;
+    }
+
+    &::-webkit-progress-value {
+      background-color: #8a4baf;
+      border-radius: 10px;
+    }
+  }
+}

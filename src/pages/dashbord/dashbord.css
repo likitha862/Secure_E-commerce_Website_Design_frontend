@@ -1,0 +1,54 @@
+.student-dashboard {
+  padding: 80px 20px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f9fafc, #e6e9f0);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+
+  .dashboard-heading {
+    font-size: 36px;
+    color: #6a3796;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      margin: 10px auto 0;
+      background-color: #8a4baf;
+      border-radius: 2px;
+    }
+  }
+
+  .dashboard-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .no-course-msg {
+    font-size: 18px;
+    color: #888;
+    margin-top: 40px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
